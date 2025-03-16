@@ -1,0 +1,24 @@
+.about-section {
+  background-color: var(--espresso-brown);
+  color: var(--warm-beige);
+}
+
+.about-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-family: 'Righteous', cursive;
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.about-content {
+  text-align: left;
+  margin-left: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-button {
+  background-color: var(--deep-moss);
+  color: var(--warm-beige);
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+}

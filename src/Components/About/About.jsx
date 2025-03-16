@@ -1,8 +1,9 @@
 // src/Components/About.jsx
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from '../Nav_Foot/Navbar'
+import Footer from '../Nav_Foot/Footer'
+import './About.css'
 
-const About = () => {
+export function About() {
   return (
     <div className="bg-[#4D3B2A] text-[#EDE0D4] min-h-screen">
       <Navbar />
