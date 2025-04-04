@@ -1,11 +1,11 @@
-import { Navbar } from '../Nav_Foot/Navbar';
-import Footer from '../Nav_Foot/Footer'
+import Footer from "../../Components/Footer";
+import Navbar from "../../Components/Navbar";
 
 export function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative h-[600px]">
@@ -19,7 +19,9 @@ export function Home() {
           </div>
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
             <h1 className="text-6xl font-righteous mb-4">Palenque Garabito</h1>
-            <p className="text-2xl font-poppins">Sabores auténticos de Costa Rica</p>
+            <p className="text-2xl font-poppins">
+              Sabores auténticos de Costa Rica
+            </p>
           </div>
         </section>
 
@@ -38,7 +40,9 @@ export function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-righteous text-espresso-brown">Casado Típico</h3>
+                  <h3 className="text-xl font-righteous text-espresso-brown">
+                    Casado Típico
+                  </h3>
                   <p className="text-gray-600 mt-2 font-poppins">
                     El auténtico sabor de Costa Rica en un plato tradicional.
                   </p>
@@ -53,7 +57,9 @@ export function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-righteous text-espresso-brown">Ceviche Fresco</h3>
+                  <h3 className="text-xl font-righteous text-espresso-brown">
+                    Ceviche Fresco
+                  </h3>
                   <p className="text-gray-600 mt-2 font-poppins">
                     Pescado fresco marinado con limón y especias.
                   </p>
@@ -68,7 +74,9 @@ export function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-righteous text-espresso-brown">Chifrijo</h3>
+                  <h3 className="text-xl font-righteous text-espresso-brown">
+                    Chifrijo
+                  </h3>
                   <p className="text-gray-600 mt-2 font-poppins">
                     Una deliciosa combinación de chicharrón y frijoles.
                   </p>
@@ -94,5 +102,5 @@ export function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
