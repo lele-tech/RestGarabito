@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 export function MainButton({text = "Button", extraStyles = "", onClick = () => { },
     id}) {
     return (
-        <button type="button" id={id} onClick={onClick} className={`text-white font-bold text-center rounded-sm transition-all
-        duration-300 flex items-center justify-center py-2 px-7 m-3 bg-deep-moss bg-gradient-to-b from-deep-moss to-black/0 ${extraStyles}`}>
+        <button type="button" id={id} onClick={onClick} className={`text-white font-poppins font-semibold text-center rounded-lg transition-all
+        duration-300 flex items-center justify-center py-2 px-10 h-16 bg-deep-moss bg-gradient-to-b from-deep-moss to-black/0 ${extraStyles}`}>
             {text}
         </button>
     );
@@ -16,8 +16,8 @@ export function MainButton({text = "Button", extraStyles = "", onClick = () => {
 export function SecondaryButton({text = "Button", extraStyles = "", onClick = () => { },
     id}) {
     return (
-        <button type="button" id={id} onClick={onClick} className={`text-white font-bold text-center rounded-sm transition-all
-        duration-300 flex items-center justify-center py-2 px-7 m-3 bg-cocoa-bark bg-gradient-to-b from-cocoa-bark to-black/0 ${extraStyles}`}>
+        <button type="button" id={id} onClick={onClick} className={`text-white font-poppins font-semibold text-center rounded-lg transition-all
+        duration-300 flex items-center justify-center py-2 px-10 h-16 bg-cocoa-bark bg-gradient-to-b from-cocoa-bark to-black/0 ${extraStyles}`}>
             {text}
         </button>
     );

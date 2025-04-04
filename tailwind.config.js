@@ -21,8 +21,8 @@ export default {
         'cocoa-bark': '#362419',
         'deep-moss': '#5D5C26',
         'soft-sand': '#D9CEBC',
+        'coral-reef': '#C5B9A6',
       },
-
       fontFamily: {
         righteous: ['Righteous', 'cursive'],
         poppins: ['Poppins', 'sans-serif'], 
