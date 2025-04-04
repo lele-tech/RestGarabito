@@ -24,7 +24,10 @@ export const Navbar = () => {
           <Link to="/" className="hover:text-gray-300 font-poppins text-lg">
             Menú
           </Link>
-          <Link to="/about" className="hover:text-gray-300 font-poppins text-lg">
+          <Link
+            to="/about"
+            className="hover:text-gray-300 font-poppins text-lg"
+          >
             Acerca de Nosotros
           </Link>
           <Link to="/" className="hover:text-gray-300 font-poppins text-lg">
