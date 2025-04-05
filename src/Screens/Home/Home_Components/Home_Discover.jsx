@@ -1,4 +1,4 @@
-import { MainButton, SecondaryButton } from '../../ui/Buttons'
+import { MainButton, SecondaryButton } from '../../../Components/ui/Buttons'
 import { Link } from 'react-router-dom'
 
 const imageAvailable = false;
