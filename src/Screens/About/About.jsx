@@ -1,12 +1,10 @@
 // src/Components/About.jsx
-import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import "./About.css";
 
 export function About() {
   return (
     <div className="bg-[#4D3B2A] text-[#EDE0D4] min-h-screen">
-      <Navbar />
       <div className="max-w-4xl mx-auto text-center py-12">
         <h1 className="text-4xl font-bold mb-6">Acerca de Nosotros</h1>
         <div className="flex flex-col md:flex-row items-center">
