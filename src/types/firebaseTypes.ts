@@ -21,7 +21,7 @@ export type Platillo = {
     horas_extra: number;
   };
   
-  // 👨‍💼 Empleado
+  //  Empleado
   export type Empleado = {
     nombre: string;
     cedula: string;
