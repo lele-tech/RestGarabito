@@ -1,44 +1,51 @@
 {
-    "_comentario": "Este archivo describe el modelo no relacional para Firestore en un restaurante",
-    "colecciones": {
-      "platillos": {
-        "_comentario": "Colección de platillos del restaurante",
-        "documento_id": {
-          "nombre": "string",
-          "descripcion": "string",
-          "precio": "number",
-          "categoria_id": "string",
-          "imagen_url": "string"
-        }
-      },
-      "categorias": {
-        "documento_id": {
-          "nombre": "string"
-        }
-      },
-      "empleados": {
-        "documento_id": {
-          "nombre": "string",
-          "cedula": "string",
-          "puesto": "string",
-          "salario": "number",
-          "horarios": {
-            "fecha_id": {
-              "fecha": "string (YYYY-MM-DD)",
-              "entrada": "string (HH:mm)",
-              "salida": "string (HH:mm)",
-              "horas_trabajadas": "number",
-              "horas_extra": "number"
-            }
+  "colecciones": {
+    "_comentario": " documentacion de las Colecciones de la base de datos",
+    "platillos": {
+      "documento_id": {
+        "nombre": "string",
+        "descripcion": "string",
+        "precio": "number",
+        "categoria_id": "string",      
+        "imagen_url": "string"           
+      }
+    },
+    "categorias": {
+      "documento_id": {
+        "nombre": "string"              
+      }
+    },
+    "empleados": {
+      "documento_id": {
+        "nombre": "string",
+        "cedula": "string",
+        "puesto": "string",
+        "salario": "number",
+        "horarios": {
+          "fecha_id": {
+            "fecha": "string (YYYY-MM-DD)",
+            "entrada": "string (HH:mm)",
+            "salida": "string (HH:mm)",
+            "horas_trabajadas": "number",
+            "horas_extra": "number"
           }
         }
-      },
-      "usuarios": {
-        "documento_id": {
-          "nombre": "string",
-          "correo": "string",
-          "clave": "string (hashed)"
-        }
+      }
+    },
+    "usuarios": {
+      "documento_id": {
+        "nombre": "string",
+        "correo": "string",
+        "clave": "string (hashed)"
+      }
+    },
+    "inventario": {
+      "documento_id": {
+        "nombre": "string",
+        "cantidad": "number",
+        "proveedor": "string?",
+        "fecha_vencimiento": "string (YYYY-MM-DD)?"
       }
     }
-  }  
+  }
+}
