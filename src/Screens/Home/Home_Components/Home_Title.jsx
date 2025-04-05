@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export function Home_Title() {
   return (
-    <div className='flex w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl'>
+    <div className='flex w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl pt-10 xl:pt-16'>
 
       {/* Inicio Texto */}
       <div className="w-full xl:w-1/2 h-full drop-shadow-md">
@@ -52,6 +52,11 @@ export function Home_Title() {
           src="/imgs/BackLogo_Brown.svg"
           alt="Decoración"
           className="absolute left-[80rem] transform translate-y-1/2 scale-x-[1.2] w-[30rem] z-0"
+        />
+        <img
+          src="/imgs/BackLogo_Brown.svg"
+          alt="Decoración"
+          className="absolute left-[80rem] transform  scale-x-[1.2] w-[30rem] z-0"
         />
         <img
           src="/imgs/Logo.png"
