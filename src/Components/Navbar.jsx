@@ -19,6 +19,17 @@ export const Navbar = () => {
     }
   };
 
+  const getHoverColor= () => {
+    switch (currentPath) {
+      case '/packages':
+        return 'hover:text-cocoa-bark/50';
+      case '/about':
+        return 'hover:text-cocoa-bark/50';
+      default:
+        return 'hover:text-soft-sand/50';
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 font-semibold py-6 px-5 rounded-b-full shadow-md transition-all duration-300 ease-in-out ${getNavbarColor()}`}>
       <div className="container mx-auto relative">
@@ -34,11 +45,11 @@ export const Navbar = () => {
 
 
         <div className="hidden md:flex justify-center gap-10 text-sm uppercase">
-          <Link to="/" className="hover:text-gray-300 font-poppins">Inicio</Link>
-          <Link to="/menu" className="hover:text-gray-300 font-poppins">Menú</Link>
-          <Link to="/about" className="hover:text-gray-300 font-poppins">Acerca de Nosotros</Link>
-          <Link to="/packages" className="hover:text-gray-300 font-poppins">Paquetes</Link>
-          <Link to="/contact" className="hover:text-gray-300 font-poppins">Contáctenos</Link>
+          <Link to="/" className={`${getHoverColor()} font-poppins`}>Inicio</Link>
+          <Link to="/menu" className={`${getHoverColor()} font-poppins`}>Menú</Link>
+          <Link to="/about" className={`${getHoverColor()} font-poppins`}>Acerca de Nosotros</Link>
+          <Link to="/packages" className={`${getHoverColor()} font-poppins`}>Paquetes</Link>
+          <Link to="/contact" className={`${getHoverColor()} font-poppins`}>Contáctenos</Link>
         </div>
 
 
@@ -65,11 +76,11 @@ export const Navbar = () => {
 
           
           <nav className="flex flex-col gap-4 text-sm uppercase mt-12">
-            <Link to="/" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Inicio</Link>
-            <Link to="/menu" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Menú</Link>
-            <Link to="/about" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Acerca de Nosotros</Link>
-            <Link to="/packages" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Paquetes</Link>
-            <Link to="/contact" className="hover:text-gray-300" onClick={() => setIsOpen(false)}>Contáctenos</Link>
+            <Link to="/" className={`${getHoverColor()} font-poppins`} onClick={() => setIsOpen(false)}>Inicio</Link>
+            <Link to="/menu" className={`${getHoverColor()} font-poppins`} onClick={() => setIsOpen(false)}>Menú</Link>
+            <Link to="/about" className={`${getHoverColor()} font-poppins`} onClick={() => setIsOpen(false)}>Acerca de Nosotros</Link>
+            <Link to="/packages" className={`${getHoverColor()} font-poppins`} onClick={() => setIsOpen(false)}>Paquetes</Link>
+            <Link to="/contact" className={`${getHoverColor()} font-poppins`} onClick={() => setIsOpen(false)}>Contáctenos</Link>
           </nav>
         </div>
       </div>
