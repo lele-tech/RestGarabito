@@ -1,4 +1,4 @@
-// 📦 Platillo
+//  Platillo
 export type Platillo = {
     nombre: string;
     descripcion: string;
@@ -7,12 +7,12 @@ export type Platillo = {
     imagen_url: string;
   };
   
-  // 📂 Categoría
+  //  Categoría
   export type Categoria = {
     nombre: string;
   };
   
-  // 👷‍♂️ Horario por fecha
+  //  Horario por fecha
   export type Horario = {
     fecha: string; // "YYYY-MM-DD"
     entrada: string; // "HH:mm"
@@ -32,14 +32,14 @@ export type Platillo = {
     };
   };
   
-  // 👤 Usuario
+  //  Usuario
   export type Usuario = {
     nombre: string;
     correo: string;
     clave: string; // Hashed password
   };
   
-  // 📦 Inventario
+  //  Inventario
   export type InventarioItem = {
     nombre: string;
     cantidad: number;
