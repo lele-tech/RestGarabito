@@ -1,7 +1,7 @@
 {
   "colecciones": {
     "_comentario": " documentacion de las Colecciones de la base de datos",
-    "platillos": {
+    "platos": {
       "documento_id": {
         "nombre": "string",
         "descripcion": "string",

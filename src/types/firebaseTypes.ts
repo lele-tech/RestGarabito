@@ -2,7 +2,7 @@ import { Timestamp } from "firebase/firestore";
 
 export type CategoriaNombre = "Platos" | "Ensaladas" | "Pastas" | "Bebidas";
 
-export type Platillo = {
+export type Plato = {
     nombre: string;
     descripcion: string;
     precio: number;
