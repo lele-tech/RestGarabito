@@ -1,0 +1,26 @@
+/* Estilos específicos para la página de Products */
+
+/* Oculta el texto Lorem Ipsum en el componente Home_Title */
+.home-title-wrapper .m-10:nth-child(2) {
+  display: none;
+}
+
+/* Oculta los botones de VER MENÚ y VER PAQUETES en la página de productos */
+.home-title-wrapper .m-2.md\:m-10.flex.xl\:ml-20 {
+  display: none;
+}
+
+/* Mejora el espaciado interno de las tarjetas de productos */
+.grid div.bg-coral-reef\/30 {
+  margin-bottom: 1.5rem;
+}
+
+/* Aumenta el padding interno de la información del producto */
+.grid div.bg-coral-reef\/30 .p-4 {
+  padding: 1.25rem;
+}
+
+/* Añade más espacio entre el título y la información de tiempo/precio */
+.grid div.bg-coral-reef\/30 h3 {
+  margin-bottom: 1rem;
+}
