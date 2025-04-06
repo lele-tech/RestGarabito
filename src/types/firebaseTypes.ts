@@ -1,27 +1,25 @@
-//  Platillo
+export type CategoriaNombre = "Platos" | "Ensaladas" | "Pastas" | "Bebidas";
+
 export type Platillo = {
     nombre: string;
     descripcion: string;
     precio: number;
-    categoria_id: string;
+    categoria: CategoriaNombre;
     imagen_url: string;
   };
   
-  //  Categoría
   export type Categoria = {
-    nombre: string;
+    nombre: "Platos" | "Ensaladas" | "Pastas" | "Bebidas";
   };
   
-  //  Horario por fecha
   export type Horario = {
-    fecha: string; // "YYYY-MM-DD"
-    entrada: string; // "HH:mm"
-    salida: string; // "HH:mm"
+    fecha: string; // formato: DD/MM/YYYY
+    entrada: string; // formato: HH:mm
+    salida: string; // formato: HH:mm
     horas_trabajadas: number;
     horas_extra: number;
   };
   
-  //  Empleado
   export type Empleado = {
     nombre: string;
     cedula: string;
@@ -32,18 +30,15 @@ export type Platillo = {
     };
   };
   
-  //  Usuario
   export type Usuario = {
     nombre: string;
     correo: string;
-    clave: string; // Hashed password
+    clave: string; // hash
   };
   
-  //  Inventario
-  export type InventarioItem = {
+  export type Inventario = {
     nombre: string;
     cantidad: number;
     proveedor?: string;
-    fecha_vencimiento?: string; // Solo si aplica
+    fecha_vencimiento?: string; // formato: DD/MM/YYYY
   };
-  
