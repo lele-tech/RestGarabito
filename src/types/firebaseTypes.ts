@@ -1,5 +1,3 @@
-import { Timestamp } from "firebase/firestore"; 
-
 export type CategoriaNombre = "Platos" | "Ensaladas" | "Pastas" | "Bebidas";
 
 export type Plato = {
