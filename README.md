@@ -1,8 +1,51 @@
-# React + Vite
+# Documentacion de las Colecciones de la BD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Ejemplo de la referencias en fire base.
 
-Currently, two official plugins are available:
+```Typescript
+import { getStorage, ref } from "firebase/storage";
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+// Get a reference to the storage service, which is used to create references in your storage bucket
+const storage = getStorage();
+
+// Create a storage reference from our storage service
+const storageRef = ref(storage);
+```
+
+```json
+{
+  "colecciones": {
+    "platos": {
+      "documento_id": {
+        "nombre": "string",
+        "descripcion": "string",
+        "precio": "number",
+        "categoria_ref": "reference(categorias)",
+        "imagen_url": "string"
+      }
+    },
+    "categorias": {
+      "Platos": {
+        "nombre": "Platos"
+      },
+      "Ensaladas": {
+        "nombre": "Ensaladas"
+      },
+      "Pastas": {
+        "nombre": "Pastas"
+      },
+      "Bebidas": {
+        "nombre": "Bebidas"
+      }
+    },
+    "usuarios": {
+      "documento_id": {
+        "nombre": "string",
+        "correo": "string",
+        "clave": "string (hashed)"
+      }
+    }
+  }
+}
+```
+# Fin de la documentacion de la BD
