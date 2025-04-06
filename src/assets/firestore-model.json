@@ -24,23 +24,6 @@
         "nombre": "Bebidas"
       }
     },
-    "empleados": {
-      "documento_id": {
-        "nombre": "string",
-        "cedula": "string",
-        "puesto": "string",
-        "salario": "number",
-        "horarios": {
-          "fecha_id": {
-            "fecha": "timestamp",
-            "entrada": "string (HH:mm)",
-            "salida": "string (HH:mm)",
-            "horas_trabajadas": "number",
-            "horas_extra": "number"
-          }
-        }
-      }
-    },
     "usuarios": {
       "documento_id": {
         "nombre": "string",

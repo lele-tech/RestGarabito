@@ -21,17 +21,7 @@ export type Horario = {
     horas_trabajadas: number;
     horas_extra: number;
 };
-  
-export type Empleado = {
-    nombre: string;
-    cedula: string;
-    puesto: string;
-    salario: number;
-    horarios: {
-      [fecha_id: string]: Horario;
-    };
-};
-  
+
 export type Usuario = {
     nombre: string;
     correo: string;
