@@ -1,18 +1,13 @@
-export type CategoriaNombre = "Platos" | "Ensaladas" | "Pastas" | "Bebidas";
+export type Categoria = "Platos" | "Ensaladas" | "Pastas" | "Bebidas";
 
 export type Plato = {
     nombre: string;
     descripcion: string;
     precio: number;
     tiempo_preparacion: number;
-    categoria: CategoriaNombre;
+    categoria: Categoria;
     imagen_url: string;
 };
-  
-export type Categoria = {
-    nombre: "Platos" | "Ensaladas" | "Pastas" | "Bebidas";
-};
-
 export type Usuario = {
     nombre: string;
     correo: string;
