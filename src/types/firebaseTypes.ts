@@ -6,6 +6,7 @@ export type Plato = {
     nombre: string;
     descripcion: string;
     precio: number;
+    tiempo_preparacion: number;
     categoria: CategoriaNombre;
     imagen_url: string;
 };

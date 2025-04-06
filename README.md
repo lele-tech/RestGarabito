@@ -20,6 +20,7 @@ const storageRef = ref(storage);
         "nombre": "string",
         "descripcion": "string",
         "precio": "number",
+        "tiempo_preparacion": "number",
         "categoria_ref": "reference(categorias)",
         "imagen_url": "string"
       }
