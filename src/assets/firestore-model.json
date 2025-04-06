@@ -32,7 +32,7 @@
         "salario": "number",
         "horarios": {
           "fecha_id": {
-            "fecha": "string (DD/MM/YYYY)",
+            "fecha": "timestamp",
             "entrada": "string (HH:mm)",
             "salida": "string (HH:mm)",
             "horas_trabajadas": "number",
@@ -53,7 +53,7 @@
         "nombre": "string",
         "cantidad": "number",
         "proveedor": "string?",
-        "fecha_vencimiento": "string (DD/MM/YYYY)?"
+        "fecha_vencimiento": "timestamp?"
       }
     }
   }
