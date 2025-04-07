@@ -1,4 +1,4 @@
-import { MainButton, SecondaryButton } from '../../../Components/ui/Buttons'
+import { Button } from '../../../Components/ui/Buttons'
 import { Link } from 'react-router-dom'
 
 export function Home_Title() {
@@ -31,9 +31,9 @@ export function Home_Title() {
         <div className='m-2 md:m-10 flex xl:ml-20'>
           <div className='mx-auto xl:mx-0 flex gap-10'>
             <Link to="/menu">
-              <MainButton text='VER MENÚ' extraStyles='text-sm md:text-xl' id='menu' />
+              <Button text='VER MENÚ' extraStyles='text-sm md:text-xl' id='menu'isMain={true} />
             </Link>
-            <SecondaryButton text='VER PAQUETES' extraStyles='text-sm md:text-xl' id='packages' />
+            <Button text='VER PAQUETES' extraStyles='text-sm md:text-xl' id='packages'isMain={false} />
           </div>
         </div>
         {/*Botones*/}
