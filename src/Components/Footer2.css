@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.footer-home {
+  background-color: #362419;
+  color: white;
+  padding: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-about {
+  background-color: #D9CEBC;
+  color: black;
+  padding: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-menu {
+  background-color: #362419;
+  color: white;
+  padding: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-paquetes {
+  background-color: #D9CEBC;
+  color: black;
+  padding: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-contact {
+  background-color: #362419;
+  color: white;
+  padding: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  padding: 0 12rem;
+  column-gap: 4rem;
+}
+
+.footer-section-rapidos{
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0 1rem;
+  text-align: left;
+  min-width: 250px;
+  
+}
+
+.footer-section-rapidos li {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.footer-bottom-reservados{
+  text-align: center;
+  padding: 17px 0;
+  font-size: 16px;
+  margin-top: 14px;
+  
+}
+
+.footer-home.footer-bottom-reservados{
+  background-color: #D9CEBC ;
+  color: black;
+}
+
+.footer-about.footer-bottom-reservados{
+  background-color: #362419;
+  color: white;
+}
+
+.footer-menu.footer-bottom-reservados{
+  background-color: #D9CEBC;
+  color: black;
+}
+
+.footer-contact.footer-bottom-reservados{
+  background-color: #D9CEBC;
+  color: black;
+}
+
+.footer-paquetes.footer-bottom-reservados{
+  background-color: #362419;
+  color: white;
+}
+
+.footer-link-rapidos {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 27px;
+  margin-top: 13px;
+  padding-top: 5px;
+}
+
+
+.brand-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+
+.footerLinks-home a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerLinks-about a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  text-align: center;
+  padding-top: 6px;
+}
+
+.contact-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  display: block;
+  margin: 10px 0;
+}
+
+.contact-inline p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+
+/* Estilos para los iconos de contacto */
+.whatsapp-icon {
+  color: #4e9b00; /* Color de WhatsApp */
+  margin-top: 24px;
+  margin-bottom: 24px;
+  
+}
+
+.phone-icon {
+  color: #2054ef; /* Color verde para el teléfono */
+  
+}
+
+.facebook-icon {
+  color: #0808f3; /* Color para el ícono de facebook */
+}  
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .footer-section {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .footer-section ul {
+    text-align: center;
+  }
+}
+
+
+
+
+  
