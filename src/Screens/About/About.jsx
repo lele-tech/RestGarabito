@@ -1,5 +1,10 @@
 // src/Components/About.jsx
+<<<<<<< Updated upstream
 import Footer from "../../Components/Footer";
+=======
+import Navbar from "../../Components/Navbar";
+import Footer2 from "../../Components/Footer2";
+>>>>>>> Stashed changes
 import "./About.css";
 
 export function About() {
@@ -36,7 +41,10 @@ export function About() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
+      {/* <div className="footer-bottom">
+        <p>© 2025 Palenque Garabito. Todos los derechos reservados</p>
+      </div> */}
     </div>
   );
 }
