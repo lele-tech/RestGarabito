@@ -11,10 +11,10 @@ export function Button({text = "Button", extraStyles = "", onClick = () => { },
         : "bg-cocoa-bark from-cocoa-bark to-black/0";
     return (
         <button type="button" id={id} onClick={onClick} className={`text-white font-poppins font-semibold text-center rounded-lg transition-all
-        duration-300 flex items-center justify-center py-2 px-10 h-16 bg-cocoa-bark bg-gradient-to-b from-cocoa-bark to-black/0  ${bgClasses}  ${extraStyles}`}>
+        duration-300  ease-in-out hover:scale-110 flex items-center justify-center py-2 px-10 h-16 bg-cocoa-bark bg-gradient-to-b from-cocoa-bark to-black/0  ${bgClasses}  ${extraStyles}`}>
             {text}
         </button>
-    );
+    ); 
 }
 
 Button.propTypes = {
