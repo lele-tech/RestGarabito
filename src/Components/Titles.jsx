@@ -32,7 +32,7 @@ export function Title_Light() {
                     className="absolutetransform translate-x-[13rem] -translate-y-[8rem] 2xl:translate-x-[20rem] 2xl:-translate-y-[12rem] w-[20rem] 2xl:w-[30rem] z-10"
                 />
             </div>
-            <div className="absolute h-24 w-[50%] bg-cocoa-bark xl:-right-[18.2rem] xl:top-[0.4rem] transform">
+            <div className="absolute h-24 w-[50%] bg-cocoa-bark xl:-right-[18.2rem] 2xl:-right-[28.3rem] xl:top-[0.4rem] 2xl:top-[0.2rem] transform hidden xl:flex">
             </div>
             {/* Fin Logo */}
 
@@ -59,7 +59,7 @@ export function Title_Dark() {
                 <div className="absolute -translate-x-[16rem] -translate-y-[8rem] 2xl:-translate-x-[24rem] 2xl:-translate-y-[12rem] w-[22rem] h-[22rem] 2xl:w-[32rem] 2xl:h-[32rem] rounded-full bg-soft-sand z-0">
                 </div>
             </div>
-            <div className="absolute h-24 w-[25%] bg-soft-sand -left-[2.2rem] xl:top-[0.4rem] 2xl:-top-12">
+            <div className="absolute h-24 w-[25%] bg-soft-sand -left-[2.2rem] 2xl:-left-[1.2rem] xl:top-[0.4rem] 2xl:top-[0.6rem] hidden xl:flex">
             </div>
             {/* Fin Logo */}
 
