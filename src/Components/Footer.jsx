@@ -10,11 +10,11 @@ const Footer = ({ theme = "claro" }) => {
 
   return (
     <footer className={`${bgColor} ${textColor} `}>
-      <div className="max-w-full  grid sm:grid-cols-1  lg:grid-cols-3 gap-10 p-8">
+      <div className="max-w-full grid sm:grid-cols-1  lg:grid-cols-3 gap-10 p-16 mx-auto">
 
-        <div className="flex flex-col space-y-8 w-full ">
+        <div className="flex flex-col space-y-8  ">
           <h2 className="text-7xl font-islandMoments mb-4">Palenque Garabito</h2>
-          <span className="text-lg flex items-center gap-2 font-poppins"><FaPhone /> 2639 3825 / 2639 3826</span>
+          <span className="text-lg flex items-center gap-2 font-poppins "><FaPhone className="scale-x-[-1]"/> 2639 3825 / 2639 3826</span>
           <span className="text-lg flex items-center gap-2  font-poppins"><FaWhatsapp /> 6485 0312</span>
           <span className="text-lg flex items-center gap-2 font-poppins"><FaFacebook /> Palenque Garabito</span>
         </div>
