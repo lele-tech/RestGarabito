@@ -4,7 +4,7 @@ import samplePlatos from "../../Utils/sampleDishes";
 
 export const seedPlatos = async () => {
   try {
-    const platosRef = collection(db, "Plato");
+    const platosRef = collection(db, "plato");
 
     for (const plato of samplePlatos) {
       await addDoc(platosRef, plato);
