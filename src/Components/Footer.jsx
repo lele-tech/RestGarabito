@@ -4,7 +4,7 @@ import { FaPhone, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 const Footer = ({ theme = "claro" }) => {
   const bgColor = theme === "oscuro" ? "bg-[#362419]" : "bg-[#D9CEBC]";
-  const textColor = theme === "oscuro" ? "text-[#D9CEBC]" : "text-[#362419]";
+  const textColor = theme === "oscuro" ? "text-[#F3ECE1]" : "text-[#362419]";
   const textColorBottom = theme === "oscuro" ? "text-[#362419]" : "text-[#F3ECE1]";
   const bgBottom = theme === "oscuro" ? "bg-[#D9CEBC]" : "bg-[#362419]";
 
@@ -22,7 +22,7 @@ const Footer = ({ theme = "claro" }) => {
  
         <div className=" font-poppins xl:m-auto" >
           <h3 className=" font-bold text-sm mb-8">Links Rápidos</h3>
-          <ul className="space-y-2 text-sm ">
+          <ul className="space-y-4 text-sm ">
             <li><Link to="/" className="hover:underline">Inicio</Link></li>
             <li><Link to="/menu" className="hover:underline">Menú</Link></li>
             <li><Link to="/about" className="hover:underline">Acerca de nosotros</Link></li>
