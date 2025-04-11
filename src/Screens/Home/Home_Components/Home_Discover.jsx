@@ -1,4 +1,4 @@
-import { MainButton, SecondaryButton } from '../../../Components/ui/Buttons'
+import { Button } from '../../../Components/ui/Buttons'
 import { Link } from 'react-router-dom'
 
 const imageAvailable = false;
@@ -25,7 +25,7 @@ export function Home_Discover() {
 
                 {/*Botones*/}
                 <div className='m-10'>
-                    <SecondaryButton text='ORDENA YA' extraStyles='text-xl mx-auto xl:mx-0' />
+                    <Button text='ORDENA YA' extraStyles='text-xl mx-auto xl:mx-0' isMain={false} />
                 </div>
                 {/*Botones*/}
 
