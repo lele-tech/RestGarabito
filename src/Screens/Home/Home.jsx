@@ -9,7 +9,8 @@ export function Home() {
       <Home_Title />
       <Home_Discover />
 
-      <Footer />
+      <Footer theme="oscuro" /> 
+      
     </div>
   );
 }
