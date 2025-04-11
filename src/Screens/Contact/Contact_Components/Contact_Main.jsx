@@ -10,19 +10,19 @@ export function Contact_Main() {
 
   return (
     <div className=''>
-      <img className='h-72 mt-12 drop-shadow-md' src="/imgs/Logo_Texto.png" alt="Logo de Palenque Garabito" />
+      <img className='h-72 mt-12 drop-shadow-md mx-auto xl:mx-0' src="/imgs/Logo_Texto.png" alt="Logo de Palenque Garabito" />
 
       <div className='m-10 text-cocoa-bark drop-shadow-xl'>
         <h2 className='text-2xl md:text-7xl font-righteous text-center md:-mb-2'>Contáctenos</h2>
-        <p className="text-2xl md:text-2xl mx-auto font-poppins text-center mt-5 w-[70%]">Siéntete libre de contactarnos en cualquier momento.
+        <p className="text-xl md:text-2xl mx-auto font-poppins text-center mt-5 w-[70%]">Siéntete libre de contactarnos en cualquier momento.
           Te responderemos lo más pronto posible!</p>
       </div>
 
       <div className=' text-cocoa-bark opacity-55 drop-shadow-xl'>
         <p className='text-2xl md:text-3xl mx-auto font-poppins text-center'>6485 0312</p>
-        <div className="border-b-4 border-cocoa-bark w-1/2 mx-auto my-2">
-          <div className='bg-cocoa-bark w-5 h-5 absolute rotate-45 top-9'></div>
-          <div className='bg-cocoa-bark w-5 h-5 absolute rotate-45 right-64 top-9'></div>
+        <div className="border-b-4 border-cocoa-bark w-1/2 mx-auto my-2 relative">
+          <div className='bg-cocoa-bark w-5 h-5 absolute -left-1 -top-2 rotate-45'></div>
+          <div className='bg-cocoa-bark w-5 h-5 absolute -right-1 -top-2 rotate-45'></div>
         </div>
       </div>
 
