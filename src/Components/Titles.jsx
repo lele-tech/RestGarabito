@@ -1,6 +1,6 @@
 export function Title_Light() {
     return (
-        <div className='bg-soft-sand flex w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl pt-10 xl:mb-20 2xl:mb-28 xl:pt-1 2xl:pt-16 overflow-x-hidden'>
+        <div className='bg-soft-sand flex w-full  pt-10 xl:mb-20 2xl:mb-28 xl:pt-1 2xl:pt-16 '>
 
             {/* Inicio Texto */}
             <div className="w-full xl:w-1/2 h-full drop-shadow-md xl:pt-16 xl:ml-12 2xl:ml-0">
@@ -52,7 +52,7 @@ export function Title_Light() {
 
 export function Title_Dark() {
     return (
-        <div className='flex bg-cocoa-bark w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl pt-10 xl:mb-20 2xl:mb-28 xl:pt-1 2xl:pt-16 overflow-x-hidden'>
+        <div className='flex bg-cocoa-bark w-full pt-10 xl:mb-20 2xl:mb-28 xl:pt-1 2xl:pt-16 '>
 
             {/* Inicio Logo */}
             <div className='w-1/2 justify-center items-center drop-shadow-md absolute hidden xl:flex'>

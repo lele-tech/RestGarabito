@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar />
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
