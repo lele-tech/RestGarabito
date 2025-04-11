@@ -24,6 +24,7 @@ export default {
         'coral-reef': '#C5B9A6',
       },
       fontFamily: {
+        islandMoments: ['Island Moments', 'cursive'],
         righteous: ['Righteous', 'cursive'],
         poppins: ['Poppins', 'sans-serif'], 
       },
