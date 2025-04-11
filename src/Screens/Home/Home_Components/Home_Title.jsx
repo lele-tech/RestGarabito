@@ -1,39 +1,54 @@
-import { MainButton, SecondaryButton } from '../../../Components/ui/Buttons'
-import { Link } from 'react-router-dom'
+import { Button } from "../../../Components/Buttons";
+import { Link } from "react-router-dom";
 
 export function Home_Title() {
   return (
-    <div className='flex w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl pt-10 xl:pt-16'>
-
+    <div className="flex w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl pt-10 xl:pt-16">
       {/* Inicio Texto */}
       <div className="w-full xl:w-1/2 h-full drop-shadow-md">
-
-        <div className='m-10 text-cocoa-bark'>
-          <h2 className='text-2xl md:text-7xl font-righteous tracking-[1rem] text-center md:-mb-2'>restaurante</h2>
+        <div className="m-10 text-cocoa-bark">
+          <h2 className="text-2xl md:text-7xl font-righteous tracking-[1rem] text-center md:-mb-2">
+            restaurante
+          </h2>
           <h1 className="text-5xl md:text-9xl font-righteous text-center">
             Palenque
           </h1>
           <h1 className="text-5xl md:text-9xl font-righteous text-center">
             Garabito
           </h1>
-          <p className="text-2xl md:text-3xl font-righteous text-center">La Parada Inteligente</p>
+          <p className="text-2xl md:text-3xl font-righteous text-center">
+            La Parada Inteligente
+          </p>
         </div>
 
         {/*Descripcion*/}
-        <div className='m-10'>
-          <p className='text-sm md:text-md font-poppins text-center xl:text-left'>There are many variations of passages of Lorem Ipsum available, but the majority
-            have suffered alteration in some form, by injected humour, or randomised words
-            wich don’t look even slightly believable.</p>
+        <div className="m-10">
+          <p className="text-sm md:text-md font-poppins text-center xl:text-left">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words wich don’t look even slightly
+            believable.
+          </p>
         </div>
         {/*Descripcion*/}
 
         {/*Botones*/}
-        <div className='m-2 md:m-10 flex xl:ml-20'>
-          <div className='mx-auto xl:mx-0 flex gap-10'>
+        <div className="m-2 md:m-10 flex xl:ml-20">
+          <div className="mx-auto xl:mx-0 flex gap-10">
             <Link to="/menu">
-              <MainButton text='VER MENÚ' extraStyles='text-sm md:text-xl' id='menu' />
+              <Button
+                text="VER MENÚ"
+                extraStyles="text-sm md:text-xl"
+                id="menu"
+                isMain={true}
+              />
             </Link>
-            <SecondaryButton text='VER PAQUETES' extraStyles='text-sm md:text-xl' id='packages' />
+            <Button
+              text="VER PAQUETES"
+              extraStyles="text-sm md:text-xl"
+              id="packages"
+              isMain={false}
+            />
           </div>
         </div>
         {/*Botones*/}
@@ -42,7 +57,7 @@ export function Home_Title() {
       {/* Fin Texto */}
 
       {/* Inicio Logo */}
-      <div className='w-1/2 justify-center items-center drop-shadow-md absolute hidden xl:flex'>
+      <div className="w-1/2 justify-center items-center drop-shadow-md absolute hidden xl:flex">
         <img
           src="/imgs/BackLogo_Brown.svg"
           alt="Decoración"
@@ -65,7 +80,6 @@ export function Home_Title() {
         />
       </div>
       {/* Fin Logo */}
-
     </div>
   );
 }
