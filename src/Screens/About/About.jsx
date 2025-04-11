@@ -1,5 +1,6 @@
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import { Button } from "../../Components/Buttons";
 import "./About.css";
 
 export function About() {
@@ -28,7 +29,7 @@ export function About() {
             <img
               src="/imgs/FondoPalenqueBlanco.png"
               alt="Logo Restaurante"
-              className="w-[380px] md:w-[420px] h-auto object-contain"
+              className="w-[400px] md:w-[460px] h-auto object-contain"
             />
           </div>
         </div>
@@ -46,9 +47,10 @@ export function About() {
               Nuestra Misión
             </h2>
             <p className="text-base leading-relaxed font-poppins text-coral-reef">
-              El patrona, es una familia comprometida con el servicio de excelencia al cliente
-              preservando nuestras raíces, con recetas únicas y de alta calidad. En continuo
-              colaboración en el desarrollo de la comunidad.
+              El patrona, es una familia comprometida con el servicio de
+              excelencia al cliente preservando nuestras raíces, con recetas
+              únicas y de alta calidad. En continuo colaboración en el
+              desarrollo de la comunidad.
             </p>
           </div>
 
@@ -58,11 +60,11 @@ export function About() {
               Nuestra Visión
             </h2>
             <p className="text-base leading-relaxed font-poppins text-coral-reef">
-              Nos definimos como líder en nuestro segmento de Restaurante en la zona, basándonos
-              en dos pilares: nuestra cultura organizacional y el uso eficiente de nuestros
-              recursos. Seremos la opción preferida por la calidad, diversidad, comodidad,
-              versatilidad y servicio que satisfaga las necesidades y expectativas de nuestros
-              clientes.
+              Nos definimos como líder en nuestro segmento de Restaurante en la
+              zona, basándonos en dos pilares: nuestra cultura organizacional y
+              el uso eficiente de nuestros recursos. Seremos la opción preferida
+              por la calidad, diversidad, comodidad, versatilidad y servicio que
+              satisfaga las necesidades y expectativas de nuestros clientes.
             </p>
           </div>
 
@@ -72,17 +74,21 @@ export function About() {
               Nuestros Valores
             </h2>
             <p className="text-base leading-relaxed font-poppins text-coral-reef">
-              Los valores son principios éticos en los que se asienta la cultura de nuestro
-              negocio, y nos permiten crear nuestros pautas de comportamiento. Integridad, ética,
-              compromiso, lealtad, honestidad, respeto y vocación de servicio profesional y
-              personal en nuestra labor. Para con los clientes internos y externos.
+              Los valores son principios éticos en los que se asienta la cultura
+              de nuestro negocio, y nos permiten crear nuestros pautas de
+              comportamiento. Integridad, ética, compromiso, lealtad,
+              honestidad, respeto y vocación de servicio profesional y personal
+              en nuestra labor. Para con los clientes internos y externos.
             </p>
           </div>
 
           {/* Botón */}
-          <button className="self-start px-6 py-2 rounded-full font-righteous text-sm tracking-wider text-[#3c2e22] bg-gradient-to-b from-[#e2d4c2] to-[#c7b9a6] shadow-md hover:brightness-110 transition duration-200">
-            CONTÁCTANOS
-          </button>
+          <Button
+            text="CONTACTANOS"
+            extraStyles="self-start px-6 font-righteous tracking-wider text-[#3c2e22] bg-gradient-to-b from-[#e2d4c2] to-[#c7b9a6] shadow-md hover:brightness-110 transition duration-200"
+            id="about"
+            isMain={true}
+          />
         </div>
       </div>
 
