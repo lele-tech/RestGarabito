@@ -19,7 +19,7 @@ export function Contact_Main() {
       </div>
 
       <div className=' text-cocoa-bark opacity-55 drop-shadow-xl'>
-        <p className='text-2xl md:text-3xl mx-auto font-poppins text-center'>64850312</p>
+        <p className='text-2xl md:text-3xl mx-auto font-poppins text-center'>6485 0312</p>
         <div className="border-b-4 border-cocoa-bark w-1/2 mx-auto my-2">
           <div className='bg-cocoa-bark w-5 h-5 absolute rotate-45 top-9'></div>
           <div className='bg-cocoa-bark w-5 h-5 absolute rotate-45 right-64 top-9'></div>

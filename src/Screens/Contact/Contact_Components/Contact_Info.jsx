@@ -13,25 +13,39 @@ export function Contact_Info() {
                 </div>
                 <h1 className='text-2xl md:text-5xl font-righteous text-dawn-pink md:-mb-2'>Información</h1>
                 <ul className='text-soft-sand font-poppins text-xl mt-20 space-y-16 '>
-                    <li className='flex items-center gap-2'>
-                        <img src="/imgs/icons/mail.svg" alt="email icon" className='w-10 h-10' />
-                        <span className='ml-5'>palenquegarabito@gmail.com</span>
+                    <li>
+                        <a href="mailto:palenquegarabito@gmail.com" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-7'>
+                            <img src="/imgs/icons/mail.svg" alt="email icon" className='w-10 h-10' />
+                            <span>palenquegarabito@gmail.com</span>
+                        </a>
                     </li>
-                    <li className='flex items-center gap-2'>
-                        <img src="/imgs/icons/phone.svg" alt="email icon" className='w-10 h-10' />
-                        <span className='ml-5'>2639 3825 / 2639 3826</span>
+                    <li>
+                        <div className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-6'>
+                            <img src="/imgs/icons/phone.svg" alt="email icon" className='w-10 h-10' />
+                          
+                                <span><a href="tel:+50626393825">2639 3825</a> / <a href="tel:+50626393826">2639 3826</a></span>
+  
+                        </div>
                     </li>
-                    <li className='flex items-center gap-2'>
-                        <img src="/imgs/icons/whatsapp.svg" alt="email icon" className='w-10 h-10' />
-                        <span className='ml-5'>6485 0312</span>
+                    
+                    <li>
+                        <a href="https://wa.me/50664850312" target="_blank" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-4'>
+                            <img src="/imgs/icons/whatsapp.svg" alt="whatsapp icon" className='w-10 h-10' />
+                            <span>6485 0312</span>    
+                        </a>
                     </li>
-                    <li className='flex items-center gap-2'>
-                        <img src="/imgs/icons/location.svg" alt="email icon" className='w-10 h-10' />
-                        <span className='ml-5'>Miramar, Puntarenas</span>
+
+                    <li>
+                        <a href="https://www.google.com/maps/@9.644362,-83.833144,19z" target="_blank" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-5'>
+                            <img src="/imgs/icons/location.svg" alt="email icon" className='w-10 h-10' />
+                            <span>Miramar, Puntarenas</span>
+                        </a>
                     </li>
-                    <li className='flex items-center gap-2'>
-                        <img src="/imgs/icons/clock.svg" alt="email icon" className='w-10 h-10' />
-                        <span className='ml-5'>9:00 - 18:00*</span>
+                    <li>
+                        <a href="#" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-4'>
+                            <img src="/imgs/icons/clock.svg" alt="email icon" className='w-10 h-10' />
+                            <span>9:00 - 18:00*</span>
+                        </a>
                     </li>
                 </ul>
 
