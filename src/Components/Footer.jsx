@@ -3,7 +3,7 @@ import FormLogin from "./Auth/FormLogin";
 const Footer = () => {
 
   return (
-    <footer className="bg-[#EDE0D4] text-[#4D3B2A] p-8">
+    <footer className="bg-[#EDE0D4] text-[#4D3B2A] p-8 z-50">
 
 
       <div className="bg-[#4D3B2A] text-[#EDE0D4] text-center p-4 mt-6 flex flex-col md:flex-row justify-between items-center">
