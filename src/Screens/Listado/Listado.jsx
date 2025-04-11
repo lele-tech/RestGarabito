@@ -1,6 +1,9 @@
 import { useState } from "react";
 import CardPlato from "../../Components/Card_plato";
 import { Title_Dark, Title_Light } from "../../Components/Titles";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const categorias = ["Desayunos", "Almuerzos", "Ensaladas", "Bebidas"];
 
@@ -113,40 +116,65 @@ const platosPorCategoria = {
 
 const Listado = () => {
     const [categoriaActiva, setCategoriaActiva] = useState("Desayunos");
-
+  
+    const settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024, // pantallas medianas
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 640, // móviles
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    };
+  
     return (
-        <main className="bg-cocoa-bark flex flex-col min-h-screen">
-           
-           
-            {/* Selector de Categorías */}
-            <div className="flex justify-center gap-3 mb-8 flex-wrap">
-                {categorias.map((categoria) => (
-                    <button
-                        key={categoria}
-                        onClick={() => setCategoriaActiva(categoria)}
-                        className={`font-[Poppins] px-4 py-2 rounded-full text-sm font-semibold transition duration-300 transform ${categoria === categoriaActiva
-                                ? "bg-[#f3ece1] text-[#362419] scale-105 shadow-md"
-                                : "bg-[#C5B9A6] text-white hover:bg-[#f3ece1] hover:text-[#362419]"
-                            }`}
-                    >
-                        {categoria}
-                    </button>
-                ))}
-            </div>
-
-
-            <h2 className="text-xl font-semibold text-white font-[Poppins] mb-4 ml-6">
-                {categoriaActiva}
-            </h2>
-
-
-            <div className="flex flex-wrap justify-center gap-4">
-                {platosPorCategoria[categoriaActiva].map((plato, index) => (
-                    <CardPlato key={index} plato={plato} />
-                ))}
-            </div>
-        </main>
+      <main className="bg-cocoa-bark flex flex-col min-h-screen">
+        <Title_Dark />
+  
+        {/* Selector de Categorías */}
+        <div className="flex justify-center gap-3 mb-8 flex-wrap">
+          {categorias.map((categoria) => (
+            <button
+              key={categoria}
+              onClick={() => setCategoriaActiva(categoria)}
+              className={`font-[Poppins] px-4 py-2 rounded-full text-sm font-semibold transition duration-300 transform ${
+                categoria === categoriaActiva
+                  ? "bg-[#f3ece1] text-[#362419] scale-105 shadow-md"
+                  : "bg-[#C5B9A6] text-white hover:bg-[#f3ece1] hover:text-[#362419]"
+              }`}
+            >
+              {categoria}
+            </button>
+          ))}
+        </div>
+  
+        <h2 className="text-xl font-semibold text-white font-[Poppins] mb-4 ml-6">
+          {categoriaActiva}
+        </h2>
+  
+        <div className="px-2 pb-12">
+          <Slider {...settings}>
+            {platosPorCategoria[categoriaActiva].map((plato, index) => (
+              <div key={index} className="px-2">
+                <CardPlato plato={plato} />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </main>
     );
-};
-
-export default Listado;
+  };
+  
+  export default Listado;
