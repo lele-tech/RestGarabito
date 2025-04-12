@@ -4,9 +4,9 @@ const imageAvailable = false;
 
 export function Home_Discover() {
   return (
-    <div className="xl:flex w-full h-full max-w-screen-lg xl:max-w-screen-2xl mx-auto xl:mt-16 mb-10 xl:mb-24">
+    <div className="xl:flex w-full mt-10 mx-auto mb-6 2xl:mb-24 xl:mt-0 2xl:mt-10">
       {/* Inicio Texto */}
-      <div className="w-full xl:w-2/3 h-full">
+      <div className="w-full xl:w-2/3 h-full xl:pt-12 2xl:pt-2 xl:ml-16 2xl:ml-48">
         <div className="m-10 text-cocoa-bark">
           <p className="text-2xl md:text-5xl font-righteous drop-shadow-2xl text-center xl:text-left">
             Descubre El Verdadero Significado De Sabor
@@ -38,8 +38,8 @@ export function Home_Discover() {
 
       {/* Inicio Imagen */}
       <div className="xl:w-1/2 relative">
-        <div className=" xl:absolute mx-auto xl:mx-0 w-[20rem] h-[20rem] xl:w-[28rem] xl:h-[28rem] bg-cocoa-bark rounded-full">
-          <div className="xl:absolute mx-auto xl:mx-0 w-[16rem] h-[16rem] xl:w-[26rem] xl:h-[24rem] rounded-xl bg-coral-reef xl:-top-5 xl:-right-20 ">
+        <div className=" xl:absolute mx-auto xl:mx-0 w-[20rem] h-[20rem] 2xl:w-[28rem] 2xl:h-[28rem] bg-cocoa-bark rounded-full">
+          <div className="xl:absolute mx-auto xl:mx-0 w-[16rem] h-[16rem] 2xl:w-[26rem] 2xl:h-[24rem] rounded-xl bg-coral-reef xl:-top-5 xl:-right-20 ">
             {imageAvailable ? (
               <img
                 src="/path/to/your/image.jpg"
