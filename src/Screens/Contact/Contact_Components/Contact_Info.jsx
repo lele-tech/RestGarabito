@@ -1,5 +1,5 @@
-import { Button } from '../../../Components/ui/Buttons'
-import { Link } from 'react-router-dom'
+import { Button } from "../../../Components/Buttons";
+import { Link } from "react-router-dom";
 
 export function Contact_Info() {
   return (
@@ -41,31 +41,27 @@ export function Contact_Info() {
                 </span>
               </div>
             </li>
-
-                        <li>
-                            <a href="https://wa.me/50664850312" target="_blank" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-4'>
-                                <img src="/imgs/icons/whatsapp.svg" alt="whatsapp icon" className='w-10 h-10' />
-                                <span>6485 0312</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.google.com/maps/@9.644362,-83.833144,19z" target="_blank" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-5'>
-                                <img src="/imgs/icons/location.svg" alt="email icon" className='w-10 h-10' />
-                                <span>Miramar, Puntarenas</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-4'>
-                                <img src="/imgs/icons/clock.svg" alt="email icon" className='w-10 h-10' />
-                                <span>9:00 - 18:00*</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
+            <li>
+              <a href="https://wa.me/50664850312" target="_blank" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-4'>
+                <img src="/imgs/icons/whatsapp.svg" alt="whatsapp icon" className='w-10 h-10' />
+                <span>6485 0312</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/@9.644362,-83.833144,19z" target="_blank" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-5'>
+                <img src="/imgs/icons/location.svg" alt="email icon" className='w-10 h-10' />
+                <span>Miramar, Puntarenas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" className='inline-flex items-center gap-7 transition duration-300 ease-in-out transform hover:scale-110 hover:translate-x-4'>
+                <img src="/imgs/icons/clock.svg" alt="email icon" className='w-10 h-10' />
+                <span>9:00 - 18:00*</span>
+              </a>
+            </li>
+          </ul>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
