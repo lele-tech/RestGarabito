@@ -10,16 +10,17 @@ export function Contact_Main() {
   return (
     <div className="">
       <img
-        className="h-72 mt-12 drop-shadow-md mx-auto xl:mx-0"
+        className="h-48 2xl:h-72 mt-24 2xl:mt-12 drop-shadow-md mx-auto xl:ml-24"
         src="/imgs/Logo_Texto.png"
         alt="Logo de Palenque Garabito"
       />
 
       <div className="m-10 text-cocoa-bark drop-shadow-xl">
-        <h2 className="text-2xl md:text-7xl font-righteous text-center md:-mb-2">
+        <h2 className="text-2xl md:text-7xl xl:text-5xl 2xl:text-7xl font-righteous text-center md:-mb-2">
           Contáctenos
         </h2>
-        <p className="text-xl md:text-2xl mx-auto font-poppins text-center mt-5 w-[70%]">
+        <p className="text-xl md:text-2xl xl:text-xl mx-auto font-poppins text-center mt-5 w-[70%]">
+
           Siéntete libre de contactarnos en cualquier momento. Te responderemos
           lo más pronto posible!
         </p>
