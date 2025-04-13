@@ -1,43 +1,99 @@
-// src/Components/About.jsx
+import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import { Button } from "../../Components/Buttons";
 import "./About.css";
 
 export function About() {
   return (
-    <div className="bg-[#4D3B2A] text-[#EDE0D4] min-h-screen">
-      <div className="max-w-4xl mx-auto text-center py-12">
-        <h1 className="text-4xl font-bold mb-6">Acerca de Nosotros</h1>
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="relative w-48 h-48 bg-[#EDE0D4] rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-[#4D3B2A] font-bold">PHOTO</span>
+    <>
+      <Navbar />
+
+      <div className="bg-[#3B2819] text-coral-reef min-h-screen flex flex-col md:flex-row px-4 md:px-12 py-16 pb-44">
+        {/* Lado Izquierdo */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-6 px-6">
+          {/* Texto superior alineado a la izquierda con nuevo estilo */}
+          <div className="mb-10">
+            <p className="text-3xl tracking-[0.3em] lowercase font-righteous text-soft-sand mb-3">
+              restaurante
+            </p>
+            <h2 className="text-6xl font-righteous text-soft-sand leading-[1.01]">
+              Palenque
+            </h2>
+            <h2 className="text-6xl font-righteous text-soft-sand leading-[1.01]">
+              Garabito
+            </h2>
           </div>
-          <div className="text-left ml-8">
-            <h2 className="text-xl font-semibold">Nuestra Misión</h2>
-            <p className="mb-4">
-              El patrona, es una familia comprometida con el servicio de
-              excelencia a clientes preservando nuestras raíces, con recetas
-              únicas y de alta calidad.
-            </p>
-            <h2 className="text-xl font-semibold">Nuestra Visión</h2>
-            <p className="mb-4">
-              Nos definimos como líder en nuestro segmento de Restaurante en la
-              zona, basándonos en dos pilares: nuestra cultura organizacional y
-              el uso eficiente de nuestros recursos.
-            </p>
-            <h2 className="text-xl font-semibold">Nuestros Valores</h2>
-            <p className="mb-4">
-              Los valores son principios éticos que sustentan la cultura de
-              nuestro negocio, como lealtad, honestidad, respeto y vocación de
-              servicio profesional.
-            </p>
-            <button className="bg-[#D5C4A1] text-[#4D3B2A] px-4 py-2 rounded-md hover:bg-[#b8a58f]">
-              CONTÁCTANOS
-            </button>
+
+          {/* Logo grande centrado */}
+          <div className="w-full flex justify-center mt-4">
+            <img
+              src="/imgs/FondoPalenqueBlanco.png"
+              alt="Logo Restaurante"
+              className="w-[400px] md:w-[460px] h-auto object-contain"
+            />
           </div>
         </div>
+
+        {/* Lado Derecho bajado con padding inferior del contenedor para evitar colisión con el footer */}
+        <div className="w-full md:w-1/2 flex flex-col justify-start relative top-[140px] max-w-2xl mx-auto">
+          {/* Título principal con más tracking */}
+          <h1 className="text-4xl font-righteous text-center mb-10 tracking-[0.25em] text-soft-sand">
+            Acerca de Nosotros
+          </h1>
+
+          {/* Misión */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-righteous mb-1 text-soft-sand">
+              Nuestra Misión
+            </h2>
+            <p className="text-base leading-relaxed font-poppins text-coral-reef">
+              El patrona, es una familia comprometida con el servicio de
+              excelencia al cliente preservando nuestras raíces, con recetas
+              únicas y de alta calidad. En continuo colaboración en el
+              desarrollo de la comunidad.
+            </p>
+          </div>
+
+          {/* Visión */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-righteous mb-1 text-soft-sand">
+              Nuestra Visión
+            </h2>
+            <p className="text-base leading-relaxed font-poppins text-coral-reef">
+              Nos definimos como líder en nuestro segmento de Restaurante en la
+              zona, basándonos en dos pilares: nuestra cultura organizacional y
+              el uso eficiente de nuestros recursos. Seremos la opción preferida
+              por la calidad, diversidad, comodidad, versatilidad y servicio que
+              satisfaga las necesidades y expectativas de nuestros clientes.
+            </p>
+          </div>
+
+          {/* Valores */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-righteous mb-1 text-soft-sand">
+              Nuestros Valores
+            </h2>
+            <p className="text-base leading-relaxed font-poppins text-coral-reef">
+              Los valores son principios éticos en los que se asienta la cultura
+              de nuestro negocio, y nos permiten crear nuestros pautas de
+              comportamiento. Integridad, ética, compromiso, lealtad,
+              honestidad, respeto y vocación de servicio profesional y personal
+              en nuestra labor. Para con los clientes internos y externos.
+            </p>
+          </div>
+
+          {/* Botón */}
+          <Button
+            text="CONTACTANOS"
+            extraStyles="self-start px-6 font-righteous tracking-wider text-[#3c2e22] bg-gradient-to-b from-[#e2d4c2] to-[#c7b9a6] shadow-md hover:brightness-110 transition duration-200"
+            id="about"
+            isMain={true}
+          />
+        </div>
       </div>
+
       <Footer />
-    </div>
+    </>
   );
 }
 
