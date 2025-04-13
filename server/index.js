@@ -8,6 +8,9 @@ const app = express();
 // Habilitar CORS
 app.use(cors());
 
+// Servir archivos estáticos desde la carpeta public
+app.use(express.static(path.join(__dirname, '../public')));
+
 // Configurar multer para el almacenamiento de archivos
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
