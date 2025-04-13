@@ -1,0 +1,48 @@
+/* Estilos específicos para la página de Products */
+
+/* Oculta el texto Lorem Ipsum en el componente Home_Title */
+.flex.w-full.h-full.mx-auto .w-full.xl\:w-1\/2 .m-10:nth-child(2) {
+  display: none;
+}
+
+/* Oculta los botones de VER MENÚ y VER PAQUETES en la página de productos */
+.flex.w-full.h-full.mx-auto .m-2.md\:m-10.flex.xl\:ml-20 {
+  display: none;
+}
+
+/* Añade espacio entre el título y el menú de categorías */
+.products-title {
+  margin-bottom: 3rem;
+}
+
+/* Estilos para el menú de categorías */
+.menu-categories {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+/* Estilos para las categorías del menú */
+.menu-categories button.active {
+  color: #362419; /* Color café oscuro para la categoría seleccionada */
+  font-weight: bold;
+}
+
+.menu-categories button {
+  color: #9ca3af; /* Color gris claro para categorías no seleccionadas */
+  transition: color 0.3s ease;
+}
+
+/* Mejora el espaciado interno de las tarjetas de productos */
+.grid div.bg-coral-reef\/30 {
+  margin-bottom: 1.5rem;
+}
+
+/* Aumenta el padding interno de la información del producto */
+.grid div.bg-coral-reef\/30 .p-4 {
+  padding: 1.25rem;
+}
+
+/* Añade más espacio entre el título y la información de tiempo/precio */
+.grid div.bg-coral-reef\/30 h3 {
+  margin-bottom: 1rem;
+}
