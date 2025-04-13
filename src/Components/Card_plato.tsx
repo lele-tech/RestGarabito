@@ -5,14 +5,25 @@ type CardPlatoProps = {
 };
 
 export const CardPlato = ({ plato }: CardPlatoProps) => {
+  console.log("Plato recibido en CardPlato:", plato);
   return (
-    <div className="w-96 max-h-fit rounded-2xl shadow-xl bg-[#f3ece1] pt-0 px-0 pb-0 m-5 drop-shadow-lg">
-      <div className="w-96 h-72 bg-[#C5B9A6] rounded-xl drop-shadow-lg">
-        <img
+    <div className="w-72 max-h-fit rounded-2xl shadow-xl bg-[#f3ece1] pt-0 px-0 pb-0 m-5 drop-shadow-lg">
+      
+      <div className="w-72 h-72 bg-[#C5B9A6] rounded-xl drop-shadow-lg">
+
+      {plato.imagen_url && (
+  <img
+    src={plato.imagen_url}
+    alt={plato.nombre}
+    className="object-cover w-full h-full rounded-xl"
+  />
+)}
+        {/* <img
           src={plato.imagen_url}
           alt={plato.nombre}
-          className="object-cover w-full h-full rounded-xl"
-        />
+          // className="object-cover w-full h-full rounded-xl"
+          className="rounded-xl"
+        /> */}
       </div>
 
       <div className="p-3">
