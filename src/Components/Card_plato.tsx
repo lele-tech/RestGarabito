@@ -6,17 +6,17 @@ type CardPlatoProps = {
 
 export const CardPlato = ({ plato }: CardPlatoProps) => {
   return (
-    <div className="w-96 max-h-fit rounded-2xl shadow-xl bg-[#f3ece1] pt-0 px-0 pb-0 m-5 drop-shadow-lg">
-      <div className="w-96 h-72 bg-[#C5B9A6] rounded-xl drop-shadow-lg">
+    <div className="w-full max-w-sm sm:max-w-xs md:max-w-sm lg:max-w-md rounded-2xl shadow-xl bg-[#f3ece1] drop-shadow-lg overflow-hidden m-3">
+      <div className="w-full h-52 sm:h-60 md:h-64 lg:h-72 bg-[#C5B9A6] rounded-t-2xl overflow-hidden">
         <img
           src={plato.imagen_url}
           alt={plato.nombre}
-          className="object-cover w-full h-full rounded-xl"
+          className="object-cover w-full h-full"
         />
       </div>
 
-      <div className="p-3">
-        <h3 className="font-[Poppins] text-md font-semibold drop-shadow-lg text-[#362419] uppercase">
+      <div className="p-4">
+        <h3 className="font-[Poppins] text-md font-semibold text-[#362419] uppercase">
           {plato.nombre}
         </h3>
 
@@ -43,13 +43,13 @@ export const CardPlato = ({ plato }: CardPlatoProps) => {
         </div>
 
         <div className="flex items-center mt-1 px-1">
-          <span className="font-[Poppins] text-lg font-bold drop-shadow-lg text-[#362419]">
+          <span className="font-[Poppins] text-lg font-bold text-[#362419]">
             {plato.precio.toLocaleString("es-CR", {
               style: "currency",
               currency: "CRC",
             })}
           </span>
-          <button className="ml-auto font-[Poppins] drop-shadow-lg text-sm font-bold text-deep-moss hover:underline transition duration-300 hover:scale-105 mr-6">
+          <button className="ml-auto font-[Poppins] text-sm font-bold text-deep-moss hover:underline transition duration-300 hover:scale-105">
             MÁS INFO
           </button>
         </div>

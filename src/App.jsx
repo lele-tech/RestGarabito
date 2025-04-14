@@ -5,6 +5,8 @@ import { Home } from "./Screens/Home/Home";
 import { Contact } from "./Screens/Contact/Contact";
 import About from "./Screens/About/About";
 import Navbar from "./Components/Navbar";
+import Listado from "./Screens/Listado/Listado";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/packages" element={<Listado />} />
         <Route
           path="/menu"
           element={<div>Página de Menú en construcción</div>}
