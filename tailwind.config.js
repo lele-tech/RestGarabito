@@ -25,7 +25,6 @@ export default {
         'dawn-pink': '#F3ECE1',
       },
       fontFamily: {
-        islandMoments: ['Island Moments', 'cursive'],
         righteous: ['Righteous', 'cursive'],
         poppins: ['Poppins', 'sans-serif'], 
       },
