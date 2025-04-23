@@ -9,7 +9,7 @@ const Footer = ({ theme = "claro" }) => {
   const bgBottom = theme === "oscuro" ? "bg-[#D9CEBC]" : "bg-[#362419]";
 
   return (
-    <footer className={`${bgColor} ${textColor} `}>
+  <footer className={`${bgColor} ${textColor} `}>
       <div className="max-w-full grid sm:grid-cols-1  lg:grid-cols-3 gap-10 p-16 mx-auto">
 
         <div className="flex flex-col space-y-8  ">

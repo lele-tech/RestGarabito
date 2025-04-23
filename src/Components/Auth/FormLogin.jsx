@@ -1,21 +1,30 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
-import { Button } from "../ui/Buttons";
+import { Button } from '../ui/Buttons';
+import { login } from "../../firebase/auth";
+import { useNavigate } from "react-router-dom";main
 
 const FormLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log("Datos del formulario:", data);
+  const onSubmit = async (data) => {
+    try {
+      await login(data.email, data.password);
+      alert("¡Inicio de sesión exitoso!");
+      navigate("/"); 
+    } catch (error) {
+      console.error("Error de login:", error);
+      alert("Correo o contraseña incorrectos");
+    }
   };
 
   return (
     <div className="flex flex-col items-center justify-center w-full px-10 font-righteous">
       <form onSubmit={handleSubmit(onSubmit)} className="w-full">
-        
-       
+
         <div className="w-full max-w-md mb-4">
           <label className="block mb-2 text-sm text-warm-beige text-start font-poppins font-medium">
             Correo electrónico:
@@ -40,7 +49,6 @@ const FormLogin = () => {
           )}
         </div>
 
-        
         <div className="w-full max-w-md mb-2">
           <label className="block mb-2 text-sm text-warm-beige text-start font-poppins font-medium">
             Contraseña:

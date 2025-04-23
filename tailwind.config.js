@@ -22,6 +22,7 @@ export default {
         'deep-moss': '#5D5C26',
         'soft-sand': '#D9CEBC',
         'coral-reef': '#C5B9A6',
+        'dawn-pink': '#F3ECE1',
       },
       fontFamily: {
         islandMoments: ['Island Moments', 'cursive'],
