@@ -10,7 +10,8 @@ export function Home() {
 
       <Home_Discover />
 
-      <Footer />
+      <Footer theme="oscuro" /> 
+      
     </div>
   );
 }
