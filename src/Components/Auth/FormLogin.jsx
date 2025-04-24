@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
-import { Button } from '../ui/Buttons';
+import { Button } from '../Buttons';
 import { login } from "../../firebase/auth";
-import { useNavigate } from "react-router-dom";main
+import { useNavigate } from "react-router-dom";
 
 const FormLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
