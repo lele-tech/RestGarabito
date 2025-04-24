@@ -1,9 +1,11 @@
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import { Button } from "../../Components/Buttons";
+import { Button } from "../../Components/ui/Buttons";
 import "./About.css";
+import { useNavigate } from "react-router-dom";
 
 export function About() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -84,11 +86,13 @@ export function About() {
 
           {/* Botón */}
           <Button
-            text="CONTACTANOS"
-            extraStyles="self-start px-6 font-righteous tracking-wider text-[#3c2e22] bg-gradient-to-b from-[#e2d4c2] to-[#c7b9a6] shadow-md hover:brightness-110 transition duration-200"
-            id="about"
-            isMain={true}
-          />
+          text="CONTACTANOS"
+          extraStyles="self-start px-6 font-righteous tracking-wider text-[#3c2e22] bg-gradient-to-b from-[#e2d4c2] to-[#c7b9a6] shadow-md hover:brightness-110 transition duration-200"
+          id="about"
+          isMain={true}
+          onClick={() => navigate("/contact")}
+        />
+
         </div>
       </div>
 

@@ -5,7 +5,7 @@ import { Contact_Info } from './Contact_Components/Contact_Info';
 export function Contact() {
     return (
         <div className="min-h-screen flex flex-col bg-soft-sand">
-            <div className='xl:mb-52 flex flex-col xl:flex-row w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl pt-10 xl:pt-16 '>
+            <div className='xl:mb-36 2xl:mb-52 flex flex-col xl:flex-row w-full 2xl:mt-16'>
                 
                 <div className='xl:w-2/3'>
                     <Contact_Main />

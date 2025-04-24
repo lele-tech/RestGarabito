@@ -6,9 +6,11 @@ export function Home() {
     return (
       <div className="min-h-screen flex flex-col bg-soft-sand">
       <Home_Title />
+
       <Home_Discover />
 
-      <Footer />
+      <Footer theme="oscuro" /> 
+      
     </div>
   );
 }
