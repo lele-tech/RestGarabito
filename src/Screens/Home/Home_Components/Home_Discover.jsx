@@ -1,4 +1,4 @@
-import { Button } from "../../../Components/Buttons";
+import { Button } from "../../../Components/ui/Buttons";
 
 const imageAvailable = false;
 

@@ -1,4 +1,4 @@
-import { Button } from "../../../Components/Buttons";
+import { Button } from "../../../Components/ui/Buttons";
 import { Link } from "react-router-dom";
 
 export function Contact_Info() {
@@ -6,7 +6,7 @@ export function Contact_Info() {
     <div className="flex h-full mt-20 xl:mt-28 2xl:mt-24">
       <div className="w-[20%] h-full bg-dawn-pink absolute right-0 top-0 hidden xl:flex"></div>
 
-      <div className="w-full xl:absolute drop-shadow-xl bg-cocoa-bark py-10 2xl:py-20 z-10">
+      <div className="w-full drop-shadow-xl bg-cocoa-bark pt-10 pb-10 xl:pb-0 xl:pt-20 z-10">
         <div className="w-10 h-10 2xl:w-20 2xl:h-20 drop-shadow-xl bg-dawn-pink absolute -left-5 -top-5 2xl:-left-10 2xl:-top-10 z-10  hidden xl:flex"></div>
 
         <div className="ml-10 md:ml-14 xl:ml-10 2xl:ml-12">
