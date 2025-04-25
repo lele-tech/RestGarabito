@@ -1,12 +1,12 @@
 /* Estilos específicos para la página de Products */
 
-/* Oculta el texto Lorem Ipsum en el componente Home_Title */
-.flex.w-full.h-full.mx-auto .w-full.xl\:w-1\/2 .m-10:nth-child(2) {
+/* Oculta el texto de descripción en el componente Home_Title dentro de la página de Productos */
+.products-title .m-10 p.font-poppins {
   display: none;
 }
 
-/* Oculta los botones de VER MENÚ y VER PAQUETES en la página de productos */
-.flex.w-full.h-full.mx-auto .m-2.md\:m-10.flex.xl\:ml-20 {
+/* Oculta los botones de VER MENÚ y VER PAQUETES en el componente Home_Title dentro de la página de Productos */
+.products-title .flex.gap-20.mx-10 {
   display: none;
 }
 
@@ -17,7 +17,7 @@
 
 /* Estilos para el menú de categorías */
 .menu-categories {
-  margin-top: 2rem;
+  margin-top: 10rem; /* Aumentado el margen superior */
   padding: 0 2rem;
 }
 
@@ -30,6 +30,7 @@
 .menu-categories button {
   color: #9ca3af; /* Color gris claro para categorías no seleccionadas */
   transition: color 0.3s ease;
+  font-size: 1rem; /* Reducido el tamaño de fuente */
 }
 
 /* Mejora el espaciado interno de las tarjetas de productos */
