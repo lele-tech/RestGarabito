@@ -5,6 +5,7 @@ type CardPlatoProps = {
 };
 
 export const CardPlato = ({ plato }: CardPlatoProps) => {
+  console.log("Plato recibido en CardPlato:", plato);
   return (
     <div className="w-full max-w-sm sm:max-w-xs md:max-w-sm lg:max-w-md rounded-2xl shadow-xl bg-[#f3ece1] drop-shadow-lg overflow-hidden m-3">
       <div className="w-full h-52 sm:h-60 md:h-64 lg:h-72 bg-[#C5B9A6] rounded-t-2xl overflow-hidden">
