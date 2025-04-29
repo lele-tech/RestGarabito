@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/menu" element={<ListaPlatos />} />
+          <Route path="/packages" element={<Listado />} />
           {/* <Route
             path="/menu"
             element={<div>Página de Menú en construcción</div>}
