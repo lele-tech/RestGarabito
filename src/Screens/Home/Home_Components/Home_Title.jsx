@@ -1,19 +1,19 @@
-import { Button } from "../../../Components/Buttons";
+import { Button } from "../../../Components/ui/Buttons";
 import { Link } from "react-router-dom";
 
 export function Home_Title() {
   return (
-    <div className="flex w-full h-full mx-auto max-w-screen-sm md:max-w-screen-lg xl:max-w-screen-2xl pt-10 xl:pt-16">
+    <div className="flex w-full pt-10 xl:mb-6 2xl:mb-20 xl:pt-0 2xl:pt-10">
       {/* Inicio Texto */}
-      <div className="w-full xl:w-1/2 h-full drop-shadow-md">
+      <div className="w-full xl:w-1/2 h-full drop-shadow-md xl:pt-12 2xl:pt-2 xl:ml-16 2xl:ml-48 ">
         <div className="m-10 text-cocoa-bark">
-          <h2 className="text-2xl md:text-7xl font-righteous tracking-[1rem] text-center md:-mb-2">
+          <h2 className="text-2xl md:text-7xl xl:text-6xl 2xl:text-7xl font-righteous tracking-[1rem] text-center md:-mb-2">
             restaurante
           </h2>
-          <h1 className="text-5xl md:text-9xl font-righteous text-center">
+          <h1 className="text-5xl md:text-9xl xl:text-8xl 2xl:text-9xl font-righteous text-center">
             Palenque
           </h1>
-          <h1 className="text-5xl md:text-9xl font-righteous text-center">
+          <h1 className="text-5xl md:text-9xl xl:text-8xl 2xl:text-9xl font-righteous text-center">
             Garabito
           </h1>
           <p className="text-2xl md:text-3xl font-righteous text-center">
@@ -33,12 +33,12 @@ export function Home_Title() {
         {/*Descripcion*/}
 
         {/*Botones*/}
-        <div className="m-2 md:m-10 flex xl:ml-20">
+        <div className="flex gap-20 mx-10">
           <div className="mx-auto xl:mx-0 flex gap-10">
             <Link to="/menu">
               <Button
                 text="VER MENÚ"
-                extraStyles="text-sm md:text-xl"
+                extraStyles="text-sm md:text-xl "
                 id="menu"
                 isMain={true}
               />
@@ -49,7 +49,9 @@ export function Home_Title() {
               id="packages"
               isMain={false}
             />
+
           </div>
+
         </div>
         {/*Botones*/}
       </div>
@@ -57,27 +59,19 @@ export function Home_Title() {
       {/* Fin Texto */}
 
       {/* Inicio Logo */}
-      <div className="w-1/2 justify-center items-center drop-shadow-md absolute hidden xl:flex">
-        <img
-          src="/imgs/BackLogo_Brown.svg"
-          alt="Decoración"
-          className="absolute left-[72rem]  transform translate-y-1/2 scale-x-[1.2] w-[30rem] z-0"
-        />
-        <img
-          src="/imgs/BackLogo_Brown.svg"
-          alt="Decoración"
-          className="absolute left-[80rem] transform translate-y-1/2 scale-x-[1.2] w-[30rem] z-0"
-        />
-        <img
-          src="/imgs/BackLogo_Brown.svg"
-          alt="Decoración"
-          className="absolute left-[80rem] transform  scale-x-[1.2] w-[30rem] z-0"
-        />
+      <div className='w-full h-full justify-center items-center drop-shadow-md absolute hidden xl:flex overflow-hidden xl:mt-8 2xl:mt-6'>
         <img
           src="/imgs/Logo.png"
           alt="Logo_Garabito"
-          className="absolute left-[46rem] -top-[12rem] transform translate-y-1/2 w-[30rem] z-10"
+          className="transform translate-x-[23rem] -translate-y-[8rem] 2xl:translate-x-[36rem] 2xl:-translate-y-[12rem] w-[20rem] 2xl:w-[30rem] z-10"
         />
+        <img
+          src="/imgs/BackLogo_Brown.svg"
+          alt="Decoración"
+          className="transform translate-x-[20rem] -translate-y-[8rem] 2xl:translate-x-[32rem] 2xl:-translate-y-[12rem] scale-x-[1.2] w-[20rem] 2xl:w-[30rem] z-0"
+        />
+      </div>
+      <div className="2xl:-mt-10 translate-x-[14.15rem] 2xl:translate-x-[17.3rem] -translate-y-[0.65rem] 2xl:-translate-y-[0.8rem] h-24 w-[35%] bg-cocoa-bark transform hidden xl:flex">
       </div>
       {/* Fin Logo */}
     </div>

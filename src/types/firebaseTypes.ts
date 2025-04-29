@@ -9,9 +9,8 @@ export type Plato = {
     imagen_url: string;
 };
 export type Usuario = {
-    nombre: string;
     correo: string;
-    clave: string; // hash
+    clave: string; 
 };
   
 

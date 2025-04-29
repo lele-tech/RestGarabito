@@ -1,20 +1,30 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
+import { Button } from '../ui/Buttons';
+import { login } from "../../firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const FormLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log("Datos del formulario:", data);
+  const onSubmit = async (data) => {
+    try {
+      await login(data.email, data.password);
+      alert("¡Inicio de sesión exitoso!");
+      navigate("/"); 
+    } catch (error) {
+      console.error("Error de login:", error);
+      alert("Correo o contraseña incorrectos");
+    }
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full md:w-1/3 px-10 font-righteous">
+    <div className="flex flex-col items-center justify-center w-full px-10 font-righteous">
       <form onSubmit={handleSubmit(onSubmit)} className="w-full">
-        
-       
+
         <div className="w-full max-w-md mb-4">
           <label className="block mb-2 text-sm text-warm-beige text-start font-poppins font-medium">
             Correo electrónico:
@@ -39,7 +49,6 @@ const FormLogin = () => {
           )}
         </div>
 
-        
         <div className="w-full max-w-md mb-2">
           <label className="block mb-2 text-sm text-warm-beige text-start font-poppins font-medium">
             Contraseña:
@@ -73,13 +82,10 @@ const FormLogin = () => {
         <p className="w-full max-w-md mb-6 text-sm text-center cursor-pointer font-poppins text-warm-beige hover:underline">
           ¿Olvidaste tu contraseña?
         </p>
+          
+          <Button text='Ingresar' extraStyles='text-xl   xl:m-auto' isMain={true} />
+          
 
-        <button
-          type="submit"
-          className="max-w-md px-6 py-3 transition rounded-sm font-poppins bg-deep-moss text-warm-beige hover:bg-earth-olive"
-        >
-          Ingresar
-        </button>
       </form>
     </div>
   );
