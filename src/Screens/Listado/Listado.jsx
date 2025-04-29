@@ -59,7 +59,7 @@ const Listado = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
@@ -82,7 +82,7 @@ const Listado = () => {
 
   const handleCategoriaClick = (categoria) => {
     setCategoriaActiva(categoria);
-    // Reinicia el slider a la posición inicial
+    
     if (sliderRef.current) {
       sliderRef.current.slickGoTo(0);
     }
