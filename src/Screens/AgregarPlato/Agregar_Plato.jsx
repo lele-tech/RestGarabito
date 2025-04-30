@@ -1,7 +1,30 @@
 import Footer from '../../Components/Footer.jsx';
 import FormularioPlato from '../../Components/FormularioPlato/FormularioPlato.jsx'
+import { agregarPlato } from '../../services/platosService.js'; 
 
 export function Agregar_Plato() {
+
+  const handleAgregar = async (datosFormulario) => {
+    try {
+      const nuevoPlato = {
+        nombre: datosFormulario.nombre,
+        descripcion: datosFormulario.descripcion,
+        precio: parseFloat(datosFormulario.precio.replace(/[₡¢$,\s]/g, '')),
+        tiempo_preparacion: parseInt(datosFormulario.tiempo, 10),
+        categoria: "Platos",
+        imagen_url: "",
+      };
+
+      const idGenerado = await agregarPlato(nuevoPlato);
+      console.log("Plato agregado con ID:", idGenerado);
+      alert("Plato agregado exitosamente");
+
+    } catch (error) {
+      console.error("Error al agregar el plato:", error);
+      alert("Hubo un error al agregar el plato.");
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-soft-sand">
 
@@ -18,7 +41,7 @@ export function Agregar_Plato() {
 
       </div>
 
-      <FormularioPlato />
+      <FormularioPlato onSubmit={handleAgregar}/>
 
       <Footer />
     </div>
