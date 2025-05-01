@@ -16,7 +16,31 @@ export function Agregar_Plato() {
       };
 
       const idGenerado = await agregarPlato(nuevoPlato);
-      console.log("Plato agregado con ID:", idGenerado);
+
+      const imagen = datosFormulario.imagen;
+      if (imagen) {
+        const formData = new FormData();
+        formData.append("file", imagen);
+        formData.append("upload_preset", "platos");
+        formData.append("public_id", idGenerado);
+
+        const res = await fetch("https://api.cloudinary.com/v1_1/restgarabito/image/upload", {
+          method: "POST",
+          body: formData,
+        });
+
+        if (!res.ok) throw new Error("Error al subir imagen a Cloudinary");
+
+        const data = await res.json();
+        console.log("Imagen subida:", data.secure_url);
+
+        const ref = doc(db, "plato", idGenerado);
+        await updateDoc(ref, {
+          imagen_url: data.secure_url,
+        });
+        console.log("Imagen URL actualizada en Firestore");
+      }
+
       alert("Plato agregado exitosamente");
 
     } catch (error) {
