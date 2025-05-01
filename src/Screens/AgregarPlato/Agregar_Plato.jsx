@@ -1,6 +1,8 @@
 import Footer from '../../Components/Footer.jsx';
 import FormularioPlato from '../../Components/FormularioPlato/FormularioPlato.jsx'
 import { agregarPlato } from '../../services/platosService.js'; 
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from "../../Firebase/Firebase-config"; 
 
 export function Agregar_Plato() {
 
