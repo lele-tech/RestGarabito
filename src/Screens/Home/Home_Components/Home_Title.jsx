@@ -27,7 +27,7 @@ export function Home_Title() {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words wich don’t look even slightly
-            believable.
+            believable. sepa
           </p>
         </div>
         {/*Descripcion*/}
