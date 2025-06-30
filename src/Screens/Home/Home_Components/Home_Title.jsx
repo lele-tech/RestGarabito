@@ -66,8 +66,6 @@ export function Home_Title() {
           className="w-[20rem] 2xl:w-[30rem] z-10"
         />
       </div>
-      <div className="2xl:-mt-10 translate-x-[14.15rem] 2xl:translate-x-[17.3rem] -translate-y-[0.65rem] 2xl:-translate-y-[0.8rem] h-24 w-[35%] bg-cocoa-bark transform hidden xl:flex">
-      </div>
       {/* Fin Logo */}
     </div>
   );
