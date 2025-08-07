@@ -1,7 +1,56 @@
 import Footer from '../../Components/Footer.jsx';
 import FormularioPlato from '../../Components/FormularioPlato/FormularioPlato.jsx'
+import { agregarPlato } from '../../services/platosService.js'; 
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from "../../Firebase/Firebase-config"; 
 
 export function Agregar_Plato() {
+
+  const handleAgregar = async (datosFormulario) => {
+    try {
+      const nuevoPlato = {
+        nombre: datosFormulario.nombre,
+        descripcion: datosFormulario.descripcion,
+        precio: parseFloat(datosFormulario.precio.replace(/[₡¢$,\s]/g, '')),
+        tiempo_preparacion: parseInt(datosFormulario.tiempo, 10),
+        categoria: "Platos",
+        imagen_url: "",
+      };
+
+      const idGenerado = await agregarPlato(nuevoPlato);
+
+      const imagen = datosFormulario.imagen;
+      if (imagen) {
+        const formData = new FormData();
+        formData.append("file", imagen);
+        formData.append("upload_preset", "platos");
+        formData.append("public_id", idGenerado);
+
+        const res = await fetch("https://api.cloudinary.com/v1_1/restgarabito/image/upload", {
+          method: "POST",
+          body: formData,
+        });
+
+        if (!res.ok) throw new Error("Error al subir imagen a Cloudinary");
+
+        const data = await res.json();
+        console.log("Imagen subida:", data.secure_url);
+
+        const ref = doc(db, "plato", idGenerado);
+        await updateDoc(ref, {
+          imagen_url: data.secure_url,
+        });
+        console.log("Imagen URL actualizada en Firestore");
+      }
+
+      alert("Plato agregado exitosamente");
+
+    } catch (error) {
+      console.error("Error al agregar el plato:", error);
+      alert("Hubo un error al agregar el plato.");
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-soft-sand">
 
@@ -18,7 +67,7 @@ export function Agregar_Plato() {
 
       </div>
 
-      <FormularioPlato />
+      <FormularioPlato onSubmit={handleAgregar}/>
 
       <Footer />
     </div>
