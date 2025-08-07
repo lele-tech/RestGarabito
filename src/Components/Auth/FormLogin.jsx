@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
-import { Button } from '../Buttons';
+import { Button } from '../../Components/ui/Buttons';
 import { login } from "../../firebase/auth";
 import { useNavigate } from "react-router-dom";
 
