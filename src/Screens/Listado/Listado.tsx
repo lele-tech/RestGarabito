@@ -51,11 +51,12 @@ const Listado = () => {
   const obtenerPlatos = async () => {
     try {
       const snapshot = await getDocs(collection(db, "plato"));
-
-      const data: Plato[] = snapshot.docs
-        .map((doc) => doc.data() as Plato)
-        .filter((plato) => plato !== null);
-
+  
+      const data: Plato[] = snapshot.docs.map((doc) => {
+        const plato = doc.data() as Plato; // Los datos del plato
+        return { ...plato, id: doc.id }; // Agregar el id del documento
+      });
+  
       if (data.length === 0) {
         setError("⚠️ No se encontraron platos en la base de datos.");
       } else {

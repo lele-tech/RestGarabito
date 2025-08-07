@@ -1,11 +1,18 @@
 import { Plato } from "../types/firebaseTypes";
+import { useNavigate } from "react-router-dom";
 
 type CardPlatoProps = {
   plato: Plato;
 };
 
 export const CardPlato = ({ plato }: CardPlatoProps) => {
-  console.log("Plato recibido en CardPlato:", plato);
+  const navigate = useNavigate();
+
+  // Función para manejar la edición del plato
+  const handleEdit = () => {
+    navigate("/editar", { state: { plato, id: plato.id } }); // Pasamos el plato y el id
+  };
+
   return (
     <div className="w-full max-w-sm sm:max-w-xs md:max-w-sm lg:max-w-md rounded-2xl shadow-xl bg-[#f3ece1] drop-shadow-lg overflow-hidden m-3">
       <div className="w-full h-52 sm:h-60 md:h-64 lg:h-72 bg-[#C5B9A6] rounded-t-2xl overflow-hidden">
@@ -52,6 +59,13 @@ export const CardPlato = ({ plato }: CardPlatoProps) => {
           </span>
           <button className="ml-auto font-[Poppins] text-sm font-bold text-deep-moss hover:underline transition duration-300 hover:scale-105">
             MÁS INFO
+          </button>
+          {/* Botón de edición */}
+          <button
+            onClick={handleEdit}
+            className="ml-auto font-[Poppins] text-sm font-bold text-deep-moss hover:underline transition duration-300 hover:scale-105"
+          >
+            EDITAR
           </button>
         </div>
       </div>

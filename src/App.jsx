@@ -9,6 +9,10 @@ import ListaPlatos from "./Components/ListaPlatos";
 import { Agregar_Plato } from "./Screens/AgregarPlato/Agregar_Plato";
 import Listado from "./Screens/Listado/Listado";
 
+import EditarPlato  from "./Screens/EditarPlato/EditarPlato"
+import EditarScreen from "./Screens/EditarPlato/EditarScreen"
+
+
 
 function App() {
   return (
@@ -20,6 +24,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/menu" element={<ListaPlatos />} />
           <Route path="/packages" element={<Listado />} />
+          <Route path="/editar" element={< EditarScreen />} />
+          
           {/* <Route
             path="/menu"
             element={<div>Página de Menú en construcción</div>}
