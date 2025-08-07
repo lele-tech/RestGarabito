@@ -9,7 +9,14 @@ import Navbar from "./Components/Navbar";
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import ListaPlatos from "./Components/ListaPlatos";
 import { Agregar_Plato } from "./Screens/AgregarPlato/Agregar_Plato";
+
+import Listado from "./Screens/Listado/Listado";
+
+import EditarPlato  from "./Screens/EditarPlato/EditarPlato"
+import EditarScreen from "./Screens/EditarPlato/EditarScreen"
+
 
 
 function App() {
@@ -20,10 +27,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/agregar" element={<Agregar_Plato/>} />
+          <Route path="/menu" element={<ListaPlatos />} />
+          <Route path="/packages" element={<Listado />} />
+          <Route path="/editar" element={< EditarScreen />} />
+          
           {/* <Route
-          path="/menu"
-          element={<div>Página de Menú en construcción</div>}
+            path="/menu"
+            element={<div>Página de Menú en construcción</div>}
 packages-page
         />
         <Route path="/about" element={<About />} />
@@ -34,8 +44,7 @@ packages-page
         
       </Routes>
 
-        /> */}
-
+          /> */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
